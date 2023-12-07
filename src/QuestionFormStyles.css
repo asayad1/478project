@@ -1,0 +1,48 @@
+.question-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    width: 48%; /* Adjust as needed for your layout */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-section textarea {
+    width: 100%; /* Full width of the container */
+    height: 70vh; /* Adjust the height as needed */
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+.left-section button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.left-section button:hover {
+    background-color: #45a049;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-left: 2px solid #ccc; /* Visual separation */
+    padding-left: 20px;
+}

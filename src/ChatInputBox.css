@@ -1,0 +1,66 @@
+.chat-input-box {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Align to the bottom */
+    left: 250px; /* Start after the sidebar */
+    right: 0; /* Extend to the right edge */
+    background-color: transparent; /* Background color for visibility */
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.chat-input-box textarea {
+    /* Removed flex-grow */
+    margin-right: 10px; /* Spacing between textarea and button */
+    outline: none;
+    padding: 3px;
+    color: white;
+    border-radius: 13px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: 60%; /* Set the width to desired value */
+    resize: none; /* Disables resizing of textarea */
+    line-height: 2.5; /* Adjust line height to vertically center text */
+    text-align: left; /* Align text to the left */
+    height: 55px; /* Adjust the height to your preference */
+    padding-top: 5px; /* Adjust top padding for vertical alignment */
+    padding-bottom: 5px; /* Adjust bottom padding for vertical alignment */
+    padding-left: 10px;
+    /* Other existing styles */
+}
+
+.chat-input-box textarea::placeholder {
+    line-height: 2.5; /* Ensure placeholder text is also vertically centered */
+}
+
+.chat-input-box button {
+    padding: 10px 15px;
+    background-color: #484954;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chat-input-box button:hover {
+    background-color: #4849548b;
+}
+
+.response-modal {
+    color: white;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.response-modal > h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    padding-bottom: 3.5%;
+}
+
+.graph {
+    width: 90%;
+    padding-bottom: 100px;
+}

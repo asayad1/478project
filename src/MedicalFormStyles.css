@@ -1,0 +1,36 @@
+.medical-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.medical-form h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.medical-form input, 
+.medical-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.medical-form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.medical-form button:hover {
+    background-color: #45a049;
+}

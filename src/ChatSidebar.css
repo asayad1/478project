@@ -1,0 +1,63 @@
+.chat-sidebar {
+    width: 300px; /* Adjust width as needed */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed Position */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    background-color: #000000; /* Background color */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px; /* Padding around the content */
+    overflow-y: hidden; /* Hide vertical scrollbar for the sidebar */
+    color: white;
+}
+
+.chat-sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chat-sidebar .menu-items {
+    
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    max-height: calc(100vh - 60px); /* Maximum height minus logo and padding */
+    overflow-y: auto; /* Scrollable, only for menu items */
+}
+
+.chat-sidebar .menu-items li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button {
+    margin-bottom: 50%;
+    padding: 10px 15px;
+    width: 95%;
+    background-color: #484954;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4849548b;
+}
+
+
+.input-field {
+    width: 95%;
+    height: 40px;
+    color: white;
+    background-color: #202123;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.prompt-patient-info {
+    color: #989899;
+    font-style: italic;
+    padding-bottom: 10px;
+}
