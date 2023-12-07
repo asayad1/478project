@@ -20,20 +20,40 @@ const BarGraph = ({ data }) => {
     };
 
     const options = {
-        indexAxis: 'y', // This will make the chart horizontal
+        indexAxis: 'y',
         scales: {
             x: {
-                beginAtZero: true
+                beginAtZero: true,
+                ticks: {
+                    color: 'white' // Sets the x-axis label color to white
+                },
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.2)' // Optional: to change grid line color
+                }
+            },
+            y: {
+                ticks: {
+                    color: 'white' // Sets the y-axis label color to white
+                },
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.2)' // Optional: to change grid line color
+                }
             }
         },
-        responsive: true,
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'white' // Sets the legend label color to white
+                }
+            }
+        },
+        responsive: true
     };
 
     return (
-        <div>
+        <div className="chart-container">
             <Bar data={chartData} options={options} />
         </div>
     );
 };
-
 export default BarGraph;
